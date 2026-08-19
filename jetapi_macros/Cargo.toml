@@ -4,6 +4,9 @@ version = "0.2.1"
 edition = "2021"
 description = "Procedural macros for JetAPI web framework"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/Heyour-s/jetapi-rust"
+homepage = "https://github.com/Heyour-s/jetapi-rust"
+documentation = "https://docs.rs/jetapi-macros"
 keywords = ["web", "framework", "macros", "jetapi"]
 categories = ["development-tools::procedural-macro-helpers"]
 
