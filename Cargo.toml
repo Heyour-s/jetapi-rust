@@ -1,0 +1,36 @@
+[package]
+name = "jetapi"
+version = "0.2.1"
+edition = "2021"
+description = "A lightweight, high-performance web framework for Rust."
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["web", "framework", "async", "rust"]
+categories = ["web-programming", "asynchronous"]
+
+[dependencies]
+poem = { version = "3.0", features = [
+    "multipart",
+    "websocket",
+    "sse",
+    "static-files",
+    "test",
+    "compression",
+    "cookie",
+    "xml",
+    "yaml",
+    "tempfile",
+    "csrf",
+    "requestid",
+] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+thiserror = "1"
+tracing = "0.1"
+futures-util = "0.3"
+tokio-stream = "0.1"
+
+# Локальный крейт с макросами
+jetapi-macros = { version = "0.2.1", path = "./jetapi_macros" }
